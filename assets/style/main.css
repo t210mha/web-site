@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/*-----------------------------------------
+    mixins
+-----------------------------------------*/
+/*-----------------------------------------
+    Variables
+-----------------------------------------*/
+/*-----------------------------------------
+    Common
+-----------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+h1 {
+    font-size: 0;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    display: inline-block;
+}
+
+/*-----------------------------------------
+    Font
+-----------------------------------------*/
+/*-----------------------------------------
+    Functions
+-----------------------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5.1282051282vw 4.1025641026vw;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        max-width: min(100vw, 75rem);
+        margin: auto;
+        padding: min(3.5vw, 2.625rem) min(9.5833333333vw, 7.1875rem);
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo-img {
+    width: 50.7692307692vw;
+    height: 5.641025641vw;
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo-img {
+        width: min(21.9166666667vw, 16.4375rem);
+        height: min(2.5vw, 1.875rem);
+    }
+}
+
+/* ハンバーガーボタン */
+.header__hamburger-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.1538461538vw;
+    height: 4.6153846154vw;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .header__hamburger-button {
+        display: none;
+    }
+}
+
+/* ---------- ハンバーガーメニュー、ヘッダーナビ ---------- */
+@media screen and (max-width: 767.9px) {
+    .header__nav {
+        position: fixed;
+        top: 16.1538461538vw;
+        left: 4.1025641026vw;
+        width: 91.7948717949vw;
+        background-color: #168352;
+        border-radius: 6.1538461538vw;
+        transition: all 0.6s;
+        transform: translateX(100vw);
+        padding-top: 10.2564102564vw;
+        padding-bottom: 10.2564102564vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav .header__nav {
+        background-color: #fff;
+        margin-right: min(1.3333333333vw, 1rem);
+    }
+}
+
+/* アクティブ状態 */
+.header__nav--active {
+    transform: translateX(0);
+}
+
+/* ナビゲーション */
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10.2564102564vw;
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav-list {
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: min(3.3333333333vw, 2.5rem);
+    }
+}
+
+.header__nav-link {
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.6153846154vw;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav-link {
+        font-size: min(1.3333333333vw, 1rem);
+        color: #000;
+    }
+}
+
+.header__nav-link:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav-link--current {
+        display: none;
+    }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+/*-----------------------------------------
+    Common
+-----------------------------------------*/
+
+// スムーススクロール
+html {
+    scroll-behavior: smooth;
+}
+
+// リンク
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+// h1のスタイルをリセット
+h1 {
+    font-size: 0;
+    font-weight: normal;
+}
+
+// リストのスタイルをリセット
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// 自動改行のための設定
+span {
+    display: inline-block;
+}

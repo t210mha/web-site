@@ -1,0 +1,65 @@
+/*-----------------------------------------
+    Functions
+-----------------------------------------*/
+
+// コンテンツ幅の指定
+$sp_content_width: 390;
+$pc_content_width: 1200;
+$pc_full_width: 1500;
+
+// 本番用か否か？本番用の場合は1にする。0の場合はpxで出力される。(パーフェクトピクセル用)
+$production: 1;
+
+// SP用: vwへの変換
+@function vw($px) {
+    @if $production !=1 {
+        @return $px * 1px;
+    }
+
+    @return calc($px * 100vw / $sp_content_width);
+}
+
+// PC用: vwへの変換
+@function vwp($px) {
+    @if $production !=1 {
+        @return $px * 1px;
+    }
+
+    @return calc($px * 100vw / $pc_full_width);
+}
+
+// pxをremに変換
+@function px2Rem($px) {
+    @if $production !=1 {
+        @return $px * 1px;
+    }
+
+    @return calc($px / 16) * 1rem;
+}
+
+// 下記でmin/max関数をScssの関数ではなくcssの関数として出力するためのラッパー
+@function min($values...) {
+    @return unquote('min(#{$values})');
+}
+
+@function max($values...) {
+    @return unquote('max(#{$values})');
+}
+
+// vwで動作し、pxで頭打ちにする関数
+@function mvw($px) {
+    @if $production !=1 {
+        @return $px * 1px;
+    }
+
+    $value1: calc($px * 100vw / $pc_content_width);
+    $value2: px2Rem($px);
+
+    @if $px >=0 {
+        @return min($value1, $value2);
+    }
+
+    @else {
+        @return max($value1, $value2);
+    }
+}

@@ -1,0 +1,23 @@
+/*-----------------------------------------
+    Font
+-----------------------------------------*/
+
+// Font Weight
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+// Font
+// ベースフォント
+@mixin baseFont($weight: $regular) {
+    font-family: "Noto Sans JP", serif;
+    font-weight: $weight;
+    font-style: normal;
+}
+
+// 英字用フォント
+@mixin alphabetFont($weight: $semibold) {
+    font-family: "Montserrat", sans-serif;
+    font-weight: $weight;
+    font-style: normal;
+}

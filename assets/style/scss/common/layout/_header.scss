@@ -1,0 +1,119 @@
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: g.$c-bg;
+    padding: vw(20) vw(16);
+
+    @include g.mq(md) {
+        max-width: mvw($pc_content_width);
+        margin: auto;
+        padding: mvw(42) mvw(115);
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo-img {
+    width: vw(198);
+    height: vw(22);
+
+    @include g.mq(md) {
+        width: mvw(263);
+        height: mvw(30);
+    }
+}
+
+/* ハンバーガーボタン */
+.header__hamburger-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: vw(24);
+    height: vw(18);
+    cursor: pointer;
+
+    @include g.mq(md) {
+        display: none;
+    }
+}
+
+/* ---------- ハンバーガーメニュー、ヘッダーナビ ---------- */
+.header__nav {
+    @include g.mq(sp_max) {
+        position: fixed;
+        top: vw(63);
+        left: vw(16);
+        width: vw(358);
+        background-color: g.$c-bg-hamburger;
+        border-radius: vw(24);
+        transition: all 0.6s;
+        transform: translateX(vw(390));
+        padding-top: vw(40);
+        padding-bottom: vw(40);
+    }
+
+    @include g.mq(md) {
+        .header__nav {
+            background-color: g.$c-bg;
+            margin-right: mvw(16);
+        }
+    }
+}
+
+/* アクティブ状態 */
+.header__nav--active {
+    transform: translateX(0);
+}
+
+/* ナビゲーション */
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(40);
+
+    @include g.mq(md) {
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: mvw(40);
+    }
+}
+
+.header__nav-link {
+    @include baseFont($bold);
+    font-size: vw(18);
+    color: g.$c-link-hamburger;
+
+    @include g.mq(md) {
+        font-size: mvw(16);
+        color: g.$c-link-header;
+    }
+}
+
+.header__nav-link:hover {
+    opacity: g.$opacity;
+}
+
+.header__nav-link--current {
+    @include g.mq(md) {
+        display: none;
+    }
+}
