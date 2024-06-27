@@ -103,12 +103,11 @@ span {
   .header__nav {
     position: fixed;
     top: 16.1538461538vw;
-    left: 4.1025641026vw;
+    left: 100%;
     width: 91.7948717949vw;
     background-color: #168352;
     border-radius: 6.1538461538vw;
     transition: all 0.6s;
-    transform: translateX(100vw);
     padding-top: 10.2564102564vw;
     padding-bottom: 10.2564102564vw;
   }
@@ -122,7 +121,7 @@ span {
 
 /* アクティブ状態 */
 .header__nav--active {
-  transform: translateX(0);
+  left: 4.1025641026vw;
 }
 
 /* ナビゲーション */

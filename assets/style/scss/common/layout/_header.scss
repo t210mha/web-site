@@ -60,12 +60,11 @@
     @include g.mq(sp_max) {
         position: fixed;
         top: vw(63);
-        left: vw(16);
+        left: 100%;
         width: vw(358);
         background-color: g.$c-bg-hamburger;
         border-radius: vw(24);
         transition: all 0.6s;
-        transform: translateX(vw(390));
         padding-top: vw(40);
         padding-bottom: vw(40);
     }
@@ -80,7 +79,7 @@
 
 /* アクティブ状態 */
 .header__nav--active {
-    transform: translateX(0);
+    left: vw(16);
 }
 
 /* ナビゲーション */
