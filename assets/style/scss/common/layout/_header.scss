@@ -1,3 +1,6 @@
+/*-----------------------------------------
+    header
+-----------------------------------------*/
 @use "../../global/" as g;
 @use "../common" as *;
 @use "../font" as *;
@@ -18,7 +21,7 @@
     @include g.mq(md) {
         max-width: mvw($pc_content_width);
         margin: auto;
-        padding: mvw(42) mvw(115);
+        padding: mvw(42) mvw(32);
     }
 }
 
