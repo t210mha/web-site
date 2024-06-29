@@ -1,0 +1,82 @@
+/*-----------------------------------------
+    about us
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.features {
+    background-color: g.$c-bg-features;
+    padding: vw(56) vw(16);
+
+    @include g.mq(md) {
+        padding: mvw(64) mvw(33);
+    }
+}
+
+.features__title {
+    display: flex;
+}
+
+.features__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(20);
+
+    @include g.mq(md) {
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: mvw(30);
+    }
+}
+
+.features__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0;
+    width: vw(358);
+    height: vw(289);
+    border-radius: vw(24);
+    box-shadow: vw(2) vw(2) vw(1) vw(1) g.$c-shadow;
+
+    @include g.mq(md) {
+        width: mvw(369);
+        height: mvw(319);
+        box-shadow: mvw(2) mvw(2) mvw(1) mvw(1) g.$c-shadow;
+    }
+}
+
+.features__image {
+    width: vw(358);
+    height: vw(201);
+    border-radius: vw(24) vw(24) 0 0;
+
+    @include g.mq(md) {
+        width: mvw(369);
+        height: mvw(226);
+        border-radius: mvw(24) mvw(24) 0 0;
+    }
+}
+
+.features__reason {
+    width: vw(358);
+    height: vw(88);
+    padding: vw(20) vw(16);
+    border-radius: 0 0 vw(24) vw(24);
+    @include baseFont($bold);
+    font-size: vw(18);
+    background-color: g.$c-bg;
+
+    @include g.mq(md) {
+        width: mvw(369);
+        height: mvw(93);
+        padding: mvw(20);
+        border-radius: 0 0 mvw(24) mvw(24);
+        font-size: mvw(19);
+    }
+
+}

@@ -19,9 +19,11 @@
     padding: vw(20) vw(16);
 
     @include g.mq(md) {
-        max-width: mvw($pc_content_width);
-        margin: auto;
         padding: mvw(42) mvw(32);
+    }
+
+    @include g.mq(lg) {
+        padding: mvw(42) calc((100% - px2Rem($pc_content_width) + px2Rem(32))/2);
     }
 }
 

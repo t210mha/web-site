@@ -1,0 +1,118 @@
+/*-----------------------------------------
+    about us
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: vw(56);
+
+    @include g.mq(md) {
+        padding: mvw(17) mvw(130) mvw(60);
+    }
+}
+
+.about-us__title {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    // row-gap: vw(12);
+    // padding-bottom: vw(24);
+
+    // @include g.mq(md) {
+    //     row-gap: mvw(20);
+    //     padding-bottom: mvw(23);
+    // }
+}
+
+// .about-us__title-text {
+//     @include baseFont($bold);
+//     font-size: vw(20);
+//     color: g.$c-txt;
+
+//     @include g.mq(md) {
+//         font-size: mvw(28);
+//     }
+
+//     &--en {
+//         @include alphabetFont;
+//         font-size: vw(16);
+//         color: g.$c-txt-en;
+
+//         @include g.mq(md) {
+//             font-size: mvw(20);
+//         }
+//     }
+// }
+
+.about-us__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/image/top/about/about_us_sp_01.png');
+    background-size: cover;
+    background-position: center;
+    padding: vw(32) vw(16);
+
+    @include g.mq(md) {
+        flex-direction: row;
+        background-image: none;
+        column-gap: mvw(155);
+        padding: mvw(10) mvw(78) mvw(10) mvw(66);
+    }
+}
+
+.about-us__text-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(24);
+    background-color: g.$c-bg-about-us;
+    border-radius: vw(32);
+    padding: vw(24);
+
+    @include g.mq(md) {
+        background-color: g.$c-bg;
+        border-radius: 0;
+        padding: mvw(24) mvw(22);
+    }
+}
+
+.about-us__text {
+    @include baseFont;
+    font-size: vw(15);
+    color: g.$c-txt;
+
+    @include g.mq(md) {
+        font-size: mvw(15);
+    }
+
+    &--emphasis {
+        @extend .about-us__text;
+        font-weight: $bold;
+        font-size: vw(18);
+
+        @include g.mq(md) {
+            font-size: mvw(20);
+        }
+    }
+}
+
+.about-us__image {
+    display: none;
+
+    @include g.mq(md) {
+        display: block;
+        width: mvw(390);
+        height: mvw(570);
+        border-radius: mvw(40);
+    }
+}

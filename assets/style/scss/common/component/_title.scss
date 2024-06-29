@@ -1,0 +1,41 @@
+/*-----------------------------------------
+    title
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(2);
+    padding-bottom: vw(24);
+
+    @include g.mq(md) {
+        row-gap: mvw(6);
+        padding-bottom: mvw(23);
+    }
+}
+
+.title-text {
+    @include baseFont($bold);
+    font-size: vw(20);
+    color: g.$c-txt;
+
+    @include g.mq(md) {
+        font-size: mvw(28);
+    }
+
+    &--en {
+        @include alphabetFont;
+        font-size: vw(16);
+        color: g.$c-txt-en;
+
+        @include g.mq(md) {
+            font-size: mvw(20);
+        }
+    }
+}
