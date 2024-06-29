@@ -1,0 +1,75 @@
+/*-----------------------------------------
+    Case
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.case {
+    background-color: g.$c-bg-case;
+    padding: vw(56) vw(16);
+
+    @include g.mq(md) {
+        padding: mvw(64) mvw(33);
+    }
+}
+
+.case__title {
+    display: flex;
+}
+
+.case__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(32);
+
+    @include g.mq(md) {
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: mvw(30);
+    }
+}
+
+.case__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: vw(358);
+    row-gap: vw(16);
+
+    @include g.mq(md) {
+        width: mvw(369);
+        row-gap: mvw(17);
+    }
+
+    &:hover {
+        opacity: g.$opacity-btn-case-hover;
+    }
+}
+
+.case__image {
+    width: vw(358);
+    height: vw(201);
+    border-radius: vw(24) vw(24) 0 0;
+
+    @include g.mq(md) {
+        width: mvw(369);
+        height: mvw(226);
+        border-radius: mvw(24) mvw(24) 0 0;
+    }
+}
+
+.case__title {
+    @include baseFont($bold);
+    font-size: vw(18);
+    color: g.$c-link-case-section;
+    text-align: left;
+
+    @include g.mq(md) {
+        font-size: mvw(19);
+    }
+
+}

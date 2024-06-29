@@ -580,4 +580,80 @@ span {
   }
 }
 
+/*-----------------------------------------
+    Case
+-----------------------------------------*/
+.case {
+  background-color: #f3f9f6;
+  padding: 14.358974359vw 4.1025641026vw;
+}
+@media screen and (min-width: 768px) {
+  .case {
+    padding: min(5.1612903226vw, 4rem) min(2.6612903226vw, 2.0625rem);
+  }
+}
+
+.case__title {
+  display: flex;
+}
+
+.case__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 8.2051282051vw;
+}
+@media screen and (min-width: 768px) {
+  .case__list {
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: min(2.4193548387vw, 1.875rem);
+  }
+}
+
+.case__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 91.7948717949vw;
+  row-gap: 4.1025641026vw;
+}
+@media screen and (min-width: 768px) {
+  .case__item {
+    width: min(29.7580645161vw, 23.0625rem);
+    row-gap: min(1.3709677419vw, 1.0625rem);
+  }
+}
+.case__item:hover {
+  opacity: 0.5;
+}
+
+.case__image {
+  width: 91.7948717949vw;
+  height: 51.5384615385vw;
+  border-radius: 6.1538461538vw 6.1538461538vw 0 0;
+}
+@media screen and (min-width: 768px) {
+  .case__image {
+    width: min(29.7580645161vw, 23.0625rem);
+    height: min(18.2258064516vw, 14.125rem);
+    border-radius: min(1.935483871vw, 1.5rem) min(1.935483871vw, 1.5rem) 0 0;
+  }
+}
+
+.case__title {
+  font-family: "Noto Sans JP", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.6153846154vw;
+  color: #09947b;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .case__title {
+    font-size: min(1.5322580645vw, 1.1875rem);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
