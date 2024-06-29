@@ -1,0 +1,58 @@
+/*-----------------------------------------
+    Footer
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: vw(68);
+    padding: vw(24) vw(28);
+    background-color: g.$c-bg-footer;
+
+    @include g.mq(md) {
+        height: mvw(96);
+        padding: mvw(36) 0;
+    }
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    column-gap: vw(18);
+
+    @include g.mq(md) {
+        column-gap: mvw(20);
+    }
+}
+
+.footer__link {
+    @include baseFont;
+    font-size: vw(13);
+    color: g.$c-link-footer;
+
+    @include g.mq(md) {
+        font-size: mvw(15);
+    }
+
+    &:hover {
+        opacity: g.$opacity;
+    }
+}
+
+.footer__separator {
+    width: vw(1);
+    height: vw(20);
+    background-color: g.$c-link-footer;
+    display: inline-block;
+
+    @include g.mq(md) {
+        width: mvw(1);
+        height: mvw(24);
+    }
+}
