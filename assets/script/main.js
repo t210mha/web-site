@@ -23,7 +23,29 @@ $(window).on('resize', function () {
 });
 
 /*-----------------------------------------
-    Topページ
+    価格・スペックページ
+-----------------------------------------*/
+
+// swiper
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    loopedSlides: 3, // 3つのスライドをループに含める
+    initialSlide: 0, // 初期表示スライドを2番目に設定
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true, // スクロールバーを非表示にする
+    },
+    autoplay: {
+        delay: 6000, // 6秒ごとにスライドを切り替える
+    },
+});
+
+/*-----------------------------------------
+    よくあるご質問ページ
 -----------------------------------------*/
 
 // ---------- アコーディオン ----------

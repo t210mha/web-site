@@ -1,0 +1,50 @@
+/*-----------------------------------------
+    products-price
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.products-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(24);
+    padding: vw(40) vw(16);
+
+    @include g.mq(md) {
+        row-gap: mvw(32);
+        padding: mvw(64) mvw(36);
+    }
+}
+
+.products-price__inner {
+    display: flex;
+    justify-content: flex-start;
+
+    @include g.mq(md) {
+        width: mvw(800);
+        align-items: center;
+    }
+}
+
+.products-price__amount {
+    @include alphabetFont($bold);
+    font-size: vw(32);
+    color: g.$c-txt;
+
+    @include g.mq(md) {
+        font-size: mvw(32);
+    }
+
+    &--small {
+        @include baseFont($bold);
+        font-size: vw(16);
+
+        @include g.mq(md) {
+            font-size: mvw(16);
+        }
+    }
+}

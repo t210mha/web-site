@@ -1,0 +1,49 @@
+/*-----------------------------------------
+    heading
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.heading {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: vw(358);
+    padding-bottom: vw(12);
+    border-bottom: solid vw(3) g.$c-bar-price-spec-section-gray;
+    position: relative;
+
+    @include g.mq(md) {
+        width: mvw(800);
+        padding: mvw(100) 0 mvw(32);
+        border-bottom-width: mvw(5);
+    }
+}
+
+.heading::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-bottom: solid vw(3) g.$c-bar-price-spec-section;
+    bottom: vw(-3);
+    left: 0;
+    width: vw(50);
+
+    @include g.mq(md) {
+        border-bottom-width: mvw(5);
+        bottom: mvw(-5);
+        width: mvw(100);
+    }
+}
+
+.heading__title {
+    @include baseFont($bold);
+    font-size: vw(22);
+    color: g.$c-txt;
+
+    @include g.mq(md) {
+        font-size: mvw(28);
+    }
+}

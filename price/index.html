@@ -35,59 +35,181 @@
     <!-- ヘッダー ここから-->
     <header class="header">
         <!-- ロゴ -->
-        <h1 class="header__logo">
-        </h1>
+        <h1 class="header__logo"><a class="header__logo-link" href="/../"><img class="header__logo-img"
+                    src="/../assets/image/header/logo_01.svg" alt="Kirameki Farm"></a></h1>
 
         <!-- ハンバーガーボタン -->
         <button type="button" class="header__hamburger-button">
+            <img class="header__hamburger-button-bars" src="/../assets/image/header/hamburger_btn_bar_01.svg" alt="">
         </button>
 
         <!-- ナビゲーション、ヘッダーメニュー -->
         <nav class="header__nav">
             <div class="header__nav-list">
-                <div class="header__nav-item"><a class="header__nav-link" href="#">トップ</a></div>
-                <div class="header__nav-item"><a class="header__nav-link" href="/price">価格・スペック</a></div>
-                <div class="header__nav-item"><a class="header__nav-link" href="/faq">よくあるご質問</a></div>
+                <div><a class="header__nav-link header__nav-link--disable" href="/../">トップ</a>
+                </div>
+                <div><a class="header__nav-link header__nav-link--current" href="#">価格・スペック</a></div>
+                <div><a class="header__nav-link" href="/../faq/">よくあるご質問</a></div>
             </div>
         </nav>
-
     </header>
     <!-- ヘッダー ここまで-->
 
     <main>
         <!-- カバー ここから -->
-        <section class="cover">
+        <section class=" cover-sub-page">
+            <div class="cover-sub-page__inner">
+                <img class="cover-sub-page__image" src="../assets/image/products_service/cover/cover_sp_01.png" alt="">
+                <div class="cover-sub-page__content cover-sub-page__content--products">
+                    <div class="cover-sub-page__heading">
+                        <h2 class="cover-sub-page__title">価格・スペック</h2>
+                    </div>
+                </div>
+            </div>
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="../">トップ</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">価格・スペック</a></li>
+            </ul>
         </section>
         <!-- カバー ここまで -->
 
         <!-- ギャラリー ここから -->
         <section class="gallery">
+            <div class="gallery__heading heading">
+                <h2 class="heading__title">ギャラリー</h2>
+            </div>
+            <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="gallery__image" src="/assets/image/products_service/gallery/gallery_01.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="gallery__image" src="/assets/image/products_service/gallery/gallery_02.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="gallery__image" src="/assets/image/products_service/gallery/gallery_03.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
         <!-- ギャラリー ここまで -->
 
         <!-- 特徴 ここから -->
-        <section class="feature">
+        <section class="products-feature">
+            <div class="products-feature__heading heading">
+                <h2 class="heading__title">特徴</h2>
+            </div>
+            <div class="products-feature__list">
+                <div class="products-feature__item">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="/assets/image/products_service/feature/feature_pc_01.png">
+                        <img class="products-feature__image"
+                            src="/assets/image/products_service/feature/feature_sp_01.png" alt="">
+                    </picture>
+                    <p class="products-feature__text">自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
+                </div>
+                <div class="products-feature__item">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="/assets/image/products_service/feature/feature_pc_02.png">
+                        <img class="products-feature__image"
+                            src="/assets/image/products_service/feature/feature_sp_02.png" alt="">
+                    </picture>
+                    <p class="products-feature__text">
+                        高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
+                </div>
+                <div class="products-feature__item">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="/assets/image/products_service/feature/feature_pc_03.png">
+                        <img class="products-feature__image"
+                            src="/assets/image/products_service/feature/feature_sp_03.png" alt="">
+                    </picture>
+                    <p class="products-feature__text">
+                        必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。
+                    </p>
+                </div>
+            </div>
         </section>
         <!-- 特徴 ここまで -->
 
         <!-- 価格 ここから -->
-        <section class="price">
+        <section class="products-price">
+            <div class="products-price__heading heading">
+                <h2 class="heading__title">メーカー希望小売価格</h2>
+            </div>
+            <div class="products-price__inner">
+                <div class="products-price__amount">¥550,000<span class="products-price__amount--small">（税込）</span>
+                </div>
+            </div>
         </section>
         <!-- 価格 ここまで -->
 
         <!-- スペック ここから -->
-        <section class="spec">
+        <section class="products-spec">
+            <div class="products-spec__heading heading">
+                <h2 class="heading__title">スペック</h2>
+            </div>
+            <div class="products-spec__inner spec">
+                <div class="spec__title">機体</div>
+                <div class="spec__info">
+                    <table class="spec__table">
+                        <tr class="spec__row">
+                            <th class="spec__header">ドローン名</th>
+                            <td class="spec__description">アグリ・ファルコン</td>
+                        </tr>
+                        <tr class="spec__row">
+                            <th class="spec__header">製品番号</th>
+                            <td class="spec__description">AGF-100</td>
+                        </tr>
+                        <tr class="spec__row">
+                            <th class="spec__header">飛行時間</th>
+                            <td class="spec__description">60 分</td>
+                        </tr>
+                        <tr class="spec__row">
+                            <th class="spec__header">最大積載量</th>
+                            <td class="spec__description">5 kg</td>
+                        </tr>
+                        <tr class="spec__row">
+                            <th class="spec__header">操作距離</th>
+                            <td class="spec__description">3 km</td>
+                        </tr>
+                        <tr class="spec__row">
+                            <th class="spec__header">機体重量</th>
+                            <td class="spec__description">8 kg</td>
+                        </tr>
+                        <tr class="spec__row">
+                            <th class="spec__header">機体寸法</th>
+                            <td class="spec__description">150 x 150 x 40 cm</td>
+                        </tr>
+                        <tr class="spec__row">
+                            <th class="spec__header">機能・特徴</th>
+                            <td class="spec__description">自動操縦、植物生育モニタリング、農薬散布</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </section>
         <!-- スペック ここまで -->
 
         <!-- お問い合わせ ここから -->
         <section class="contact">
+            <div class="contact__inner">
+                <a class="contact__btn" href="/contact/">お問い合わせ</a>
+            </div>
         </section>
         <!-- お問い合わせ ここまで -->
     </main>
 
     <!-- フッター ここから -->
     <footer class="footer">
+        <div class="footer__list">
+            <div class="footer__item"><a class="footer__link" href="/price/">価格・スペック</a></div>
+            <span class="footer__separator"></span>
+            <div class="footer__item"><a class="footer__link" href="/faq/">よくあるご質問</a></div>
+        </div>
     </footer>
     <!-- フッター ここまで -->
 

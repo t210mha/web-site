@@ -1,0 +1,63 @@
+/*-----------------------------------------
+    contact
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/image/products_service/contact/contact_sp_01.jpg');
+    background-size: cover;
+
+    @include g.mq(md) {
+        background-image: url('/assets/image/products_service/contact/contact_pc_01.jpg');
+        background-size: cover;
+    }
+}
+
+.contact__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: vw(358);
+    height: vw(360);
+    padding: vw(140) 0;
+
+    @include g.mq(md) {
+        height: mvw(450);
+        padding: mvw(185) mvw(262);
+    }
+}
+
+.contact__btn {
+    width: vw(358);
+    padding: vw(28) 0;
+    @include baseFont($bold);
+    font-size: vw(20);
+    border: vw(2) solid g.$c-btn-contact-border;
+    border-radius: vw(40);
+    color: g.$c-btn-contact-link;
+    text-align: center;
+
+    @include g.mq(md) {
+        width: mvw(358);
+        padding: mvw(28) 0;
+        font-size: mvw(20);
+        border-width: mvw(2);
+        border-radius: mvw(40);
+    }
+
+    &:hover {
+        background-color: g.$c-btn-contact-bg-hover;
+        font-size: vw(20);
+        color: g.$c-btn-contact-link-hover;
+
+        @include g.mq(md) {
+            font-size: mvw(20);
+        }
+    }
+}

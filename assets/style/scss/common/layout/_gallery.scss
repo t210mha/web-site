@@ -1,0 +1,74 @@
+/*-----------------------------------------
+    gallery
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(24);
+    padding: vw(40) vw(16);
+
+    @include g.mq(md) {
+        row-gap: mvw(32);
+        padding: mvw(64) mvw(36);
+    }
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper {
+    width: vw(358);
+    height: vw(236.79);
+
+    @include g.mq(md) {
+        width: mvw(800);
+        height: mvw(499.94);
+    }
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: vw(5) !important;
+
+    @include g.mq(md) {
+        bottom: mvw(16) !important;
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: g.$c-dot-price-spec-gallery;
+    opacity: g.$opacity;
+    width: vw(8);
+    height: vw(8);
+    margin: 0 vw(6) !important;
+
+    @include g.mq(md) {
+        width: mvw(8);
+        height: mvw(8);
+        margin: 0 mvw(6) !important;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: g.$c-dot-price-spec-gallery-active;
+}
+
+.gallery__image {
+    width: vw(358);
+    height: vw(236.79);
+    border-radius: vw(24);
+
+    @include g.mq(md) {
+        width: mvw(800);
+        height: mvw(499.94);
+        border-radius: mvw(24);
+    }
+}

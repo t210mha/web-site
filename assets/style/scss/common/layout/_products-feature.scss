@@ -1,0 +1,69 @@
+/*-----------------------------------------
+    products-feature
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.products-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(24);
+    padding: vw(40) vw(16);
+
+    @include g.mq(md) {
+        row-gap: mvw(32);
+        padding: mvw(64) mvw(36);
+    }
+}
+
+.products-feature__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: vw(40);
+
+    @include g.mq(md) {
+        flex-direction: row;
+        row-gap: mvw(16);
+        column-gap: mvw(31);
+        align-items: flex-start;
+        width: mvw(800);
+    }
+}
+
+.products-feature__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: vw(16);
+
+    @include g.mq(md) {
+        row-gap: mvw(16);
+    }
+}
+
+.products-feature__image {
+    width: vw(358);
+    height: vw(200);
+    border-radius: vw(16);
+
+    @include g.mq(md) {
+        width: mvw(246);
+        height: mvw(150);
+        border-radius: mvw(24);
+    }
+}
+
+.products-feature__text {
+    @include baseFont($bold);
+    font-size: vw(18);
+    color: g.$c-txt;
+
+    @include g.mq(md) {
+        font-size: mvw(18);
+    }
+}

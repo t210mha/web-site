@@ -1,0 +1,108 @@
+/*-----------------------------------------
+    products-spec
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+.products-spec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: vw(24);
+    padding: vw(40) vw(16);
+
+    @include g.mq(md) {
+        row-gap: mvw(32);
+        padding: mvw(64) mvw(36);
+    }
+}
+
+.products-spec__inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: vw(17);
+    padding-top: vw(29);
+
+    @include g.mq(md) {
+        width: mvw(800);
+        align-items: flex-start;
+        row-gap: mvw(24);
+        padding: mvw(41) mvw(30) 0;
+    }
+}
+
+.spec__title {
+    border-left: solid vw(2) g.$c-border-spec;
+    height: vw(30);
+    bottom: vw(-2);
+    left: 0;
+    padding-left: vw(16);
+    @include baseFont($bold);
+    font-size: vw(20);
+
+    @include g.mq(md) {
+        border-left-width: mvw(3);
+        height: mvw(40);
+        bottom: mvw(-2);
+        padding-left: mvw(16);
+        font-size: mvw(24);
+    }
+}
+
+.spec__table {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: vw(358);
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    @include g.mq(md) {
+        flex-wrap: nowrap;
+        width: mvw(740);
+    }
+}
+
+.spec__header {
+    display: block;
+    width: vw(358);
+    @include baseFont($bold);
+    font-size: vw(16);
+    color: g.$c-txt;
+    background-color: g.$c-bg-table-term;
+    border: vw(1) solid g.$c-border-table-spec;
+    padding: vw(12) 0 vw(12) vw(20);
+    text-align: left;
+
+    @include g.mq(md) {
+        display: table-cell;
+        width: mvw(200);
+        font-size: mvw(16);
+        border-width: mvw(1);
+        padding: mvw(23) 0 mvw(23) mvw(20);
+    }
+}
+
+.spec__description {
+    display: block;
+    width: vw(358);
+    @include baseFont;
+    font-size: vw(16);
+    color: g.$c-txt;
+    background-color: g.$c-bg-table-description;
+    border: vw(1) solid g.$c-border-table-spec;
+    padding: vw(12) 0 vw(12) vw(20);
+    text-align: left;
+
+    @include g.mq(md) {
+        display: table-cell;
+        width: mvw(541.01);
+        font-size: mvw(16);
+        border-width: mvw(1);
+        padding: mvw(23) 0 mvw(23) mvw(20);
+    }
+}

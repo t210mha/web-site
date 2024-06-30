@@ -116,7 +116,9 @@
     }
 
     &--disable {
-        display: none;
+        @include g.mq(md) {
+            display: none;
+        }
     }
 }
 
