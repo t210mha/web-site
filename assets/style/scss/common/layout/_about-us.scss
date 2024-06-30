@@ -20,37 +20,7 @@
 
 .about-us__title {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction: column;
-    // row-gap: vw(12);
-    // padding-bottom: vw(24);
-
-    // @include g.mq(md) {
-    //     row-gap: mvw(20);
-    //     padding-bottom: mvw(23);
-    // }
 }
-
-// .about-us__title-text {
-//     @include baseFont($bold);
-//     font-size: vw(20);
-//     color: g.$c-txt;
-
-//     @include g.mq(md) {
-//         font-size: mvw(28);
-//     }
-
-//     &--en {
-//         @include alphabetFont;
-//         font-size: vw(16);
-//         color: g.$c-txt-en;
-
-//         @include g.mq(md) {
-//             font-size: mvw(20);
-//         }
-//     }
-// }
 
 .about-us__content {
     display: flex;

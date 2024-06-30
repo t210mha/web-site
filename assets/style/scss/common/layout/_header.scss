@@ -109,15 +109,17 @@
     @include g.mq(md) {
         font-size: mvw(16);
         color: g.$c-link-header;
+
+        &--current {
+            color: g.$c-link-header-current-page;
+        }
+    }
+
+    &--disable {
+        display: none;
     }
 }
 
 .header__nav-link:hover {
     opacity: g.$opacity;
-}
-
-.header__nav-link--current {
-    @include g.mq(md) {
-        display: none;
-    }
 }

@@ -1,0 +1,109 @@
+/*-----------------------------------------
+    Cover Sub Page
+-----------------------------------------*/
+@use "../../global/" as g;
+@use "../common" as *;
+@use "../font" as *;
+@use "../functions" as *;
+
+
+.cover-sub-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: vw(63);
+    padding: vw(20) vw(16) vw(40);
+
+    @include g.mq(md) {
+        margin-top: mvw(114);
+        padding: mvw(40) calc((100% - mvw($pc_content_width))/2);
+    }
+}
+
+.cover-sub-page__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cover-sub-page__image {
+    display: none;
+
+    @include g.mq(sp_max) {
+        display: block;
+        width: vw(358);
+        height: vw(230);
+        border-radius: vw(24);
+    }
+}
+
+.cover-sub-page__content {
+    background-image: none;
+
+    @include g.mq(md) {
+        position: relative;
+        background-image: url('/../assets/image/faq/cover/cover_pc_01.png');
+        background-size: cover;
+        background-position: center;
+        width: mvw(1200);
+        height: mvw(550);
+        border-radius: mvw(24);
+    }
+}
+
+.cover-sub-page__heading {
+    position: relative;
+
+    @include g.mq(md) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: mvw(113);
+        background-color: g.$c-bg;
+        border-radius: 0 mvw(40) 0 0;
+        padding: mvw(39) mvw(36) mvw(40) mvw(40);
+    }
+}
+
+.cover-sub-page__title {
+    @include baseFont($bold);
+    font-size: vw(30);
+    color: g.$c-txt;
+
+    @include g.mq(md) {
+        font-size: mvw(36);
+    }
+}
+
+.breadcrumb__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+    display: inline-block;
+    margin: vw(8);
+    content: url('/../assets/image/common/arrow_01.png');
+
+    @include g.mq(md) {
+        margin: mvw(8);
+    }
+}
+
+.breadcrumb__link {
+    @include baseFont;
+    font-size: vw(12);
+    color: g.$c-txt;
+
+    @include g.mq(md) {
+        font-size: mvw(12);
+    }
+
+    &:hover {
+        opacity: g.$opacity;
+    }
+}
