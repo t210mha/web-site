@@ -11,10 +11,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: vw(20);
+    padding-top: vw(28);
 
     @include g.mq(md) {
-        padding: mvw(17) mvw(130) mvw(60);
+        padding: mvw(20) mvw(130) mvw(54);
     }
 }
 
@@ -32,10 +32,11 @@
     padding: vw(32) vw(16);
 
     @include g.mq(md) {
+        align-items: flex-start;
         flex-direction: row;
         background-image: none;
-        column-gap: mvw(155);
-        padding: mvw(10) mvw(78) mvw(10) mvw(66);
+        column-gap: mvw(130);
+        padding: mvw(3) mvw(100) mvw(10) mvw(66);
     }
 }
 
@@ -51,8 +52,9 @@
 
     @include g.mq(md) {
         background-color: g.$c-bg;
+        row-gap: mvw(25);
         border-radius: 0;
-        padding: mvw(24) mvw(22);
+        padding: mvw(100) mvw(20);
     }
 }
 

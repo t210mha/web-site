@@ -14,7 +14,7 @@
     padding-bottom: vw(19);
 
     @include g.mq(md) {
-        row-gap: mvw(6);
+        row-gap: mvw(3);
         padding-bottom: mvw(23);
     }
 }

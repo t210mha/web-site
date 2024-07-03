@@ -70,7 +70,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .title {
-    row-gap: 6px;
+    row-gap: 3px;
     padding-bottom: 23px;
   }
 }
@@ -165,6 +165,7 @@ img {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  padding: 20px 16px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -295,13 +296,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 53px;
+  margin-top: 50px;
   padding: 22px 16px;
 }
 @media screen and (min-width: 768px) {
   .cover {
     margin-top: 114px;
-    padding: 55px 36px;
+    padding: 37px 36px;
   }
 }
 
@@ -314,7 +315,9 @@ img {
 }
 @media screen and (min-width: 768px) {
   .cover__inner {
-    row-gap: 64px;
+    align-items: flex-start;
+    width: 1168px;
+    row-gap: 78px;
   }
 }
 
@@ -323,15 +326,16 @@ img {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  row-gap: 19px;
+  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .cover__catch {
+    justify-content: space-between;
     flex-direction: row;
-    column-gap: 131px;
     row-gap: 0;
-    padding-right: 66px;
-    padding-left: 66px;
+    width: 1100px;
+    height: 70px;
+    margin: auto;
   }
 }
 
@@ -344,17 +348,18 @@ img {
 }
 @media screen and (min-width: 768px) {
   .cover__text, .cover__text--title {
+    margin-top: 11px;
     font-size: 15px;
-    width: 534px;
+    width: 529px;
   }
 }
 .cover__text--title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
   .cover__text--title {
+    margin-top: 0;
     font-size: 40px;
     width: 450px;
   }
@@ -381,11 +386,11 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 28px;
 }
 @media screen and (min-width: 768px) {
   .about-us {
-    padding: 17px 130px 60px;
+    padding: 20px 130px 54px;
   }
 }
 
@@ -404,10 +409,11 @@ img {
 }
 @media screen and (min-width: 768px) {
   .about-us__content {
+    align-items: flex-start;
     flex-direction: row;
     background-image: none;
-    column-gap: 155px;
-    padding: 10px 78px 10px 66px;
+    column-gap: 130px;
+    padding: 3px 100px 10px 66px;
   }
 }
 
@@ -424,8 +430,9 @@ img {
 @media screen and (min-width: 768px) {
   .about-us__text-area {
     background-color: #fff;
+    row-gap: 25px;
     border-radius: 0;
-    padding: 24px 22px;
+    padding: 100px 20px;
   }
 }
 
