@@ -7,6 +7,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    line-height: 1.75;
+    font-family: 'Noto Sans JP', sans-serif; // 一番よく使うフォントを指定
+    color: #000; // base-color
+}
+
 // リンク
 a {
     color: #000;
@@ -39,4 +45,9 @@ ul {
 // 自動改行のための設定
 span {
     display: inline-block;
+}
+
+img {
+    vertical-align: bottom;
+    max-width: 100%;
 }

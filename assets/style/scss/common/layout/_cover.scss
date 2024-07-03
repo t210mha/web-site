@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: vw(63);
+    margin-top: vw(53);
     padding: vw(22) vw(16);
 
     @include g.mq(md) {
@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    row-gap: vw(32);
+    row-gap: vw(26);
 
     @include g.mq(md) {
         row-gap: mvw(64);
@@ -36,7 +36,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    row-gap: vw(32);
+    row-gap: vw(19);
 
     @include g.mq(md) {
         flex-direction: row;
@@ -62,6 +62,7 @@
         @extend .cover__text;
         font-weight: $bold;
         font-size: vw(28);
+        line-height: 1.5;
 
         @include g.mq(md) {
             font-size: mvw(40);

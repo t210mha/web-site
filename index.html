@@ -31,24 +31,26 @@
 <body>
     <!-- ヘッダー ここから -->
     <header class="header">
-        <!-- ロゴ -->
-        <h1 class="header__logo"><a class="header__logo-link" href="#"><img class="header__logo-img"
-                    src="assets/image/header/logo_01.svg" alt="Kirameki Farm"></a></h1>
+        <div class="header__inner">
+            <!-- ロゴ -->
+            <h1 class="header__logo"><a class="header__logo-link" href="#"><img class="header__logo-img"
+                        src="assets/image/header/logo_01.svg" alt="Kirameki Farm"></a></h1>
 
-        <!-- ハンバーガーボタン -->
-        <button type="button" class="header__hamburger-button">
-            <img class="header__hamburger-button-bars" src="/assets/image/header/hamburger_btn_bar_01.svg" alt="">
-        </button>
+            <!-- ハンバーガーボタン -->
+            <button type="button" class="header__hamburger-button">
+                <img class="header__hamburger-button-bars" src="/assets/image/header/hamburger_btn_bar_01.svg" alt="">
+            </button>
 
-        <!-- ナビゲーション、ヘッダーメニュー -->
-        <nav class="header__nav">
-            <div class="header__nav-list">
-                <div><a class="header__nav-link header__nav-link--disable" href="#">トップ</a>
+            <!-- ナビゲーション、ヘッダーメニュー -->
+            <nav class="header__nav">
+                <div class="header__nav-list">
+                    <div><a class="header__nav-link header__nav-link--disable" href="#">トップ</a>
+                    </div>
+                    <div><a class="header__nav-link" href="/price">価格・スペック</a></div>
+                    <div><a class="header__nav-link" href="/faq">よくあるご質問</a></div>
                 </div>
-                <div><a class="header__nav-link" href="/price">価格・スペック</a></div>
-                <div><a class="header__nav-link" href="/faq">よくあるご質問</a></div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <!-- ヘッダー ここまで -->
 
@@ -97,15 +99,24 @@
             </h2>
             <div class="features__list">
                 <div class="features__item">
-                    <img class="features__image" src="/assets/image/top/features/feature_01.png" alt="">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="/assets/image/top/features/feature_pc_01.png">
+                        <img class="features__image" src="/assets/image/top/features/feature_sp_01.png" alt="">
+                    </picture>
                     <p class="features__reason">農業の未来と革新的デザイン性で最新鋭の機能を完備</p>
                 </div>
                 <div class="features__item">
-                    <img class="features__image" src="/assets/image/top/features/feature_02.png" alt="">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="/assets/image/top/features/feature_pc_02.png">
+                        <img class="features__image" src="/assets/image/top/features/feature_sp_02.png" alt="">
+                    </picture>
                     <p class="features__reason">ビッグデータを駆使して、省電力・効率化を実現</p>
                 </div>
                 <div class="features__item">
-                    <img class="features__image" src="/assets/image/top/features/feature_03.png" alt="">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="/assets/image/top/features/feature_pc_03.png">
+                        <img class="features__image" src="/assets/image/top/features/feature_sp_03.png" alt="">
+                    </picture>
                     <p class="features__reason">自動運転技術を搭載したロボットで一年中稼働することができる</p>
                 </div>
             </div>
@@ -249,6 +260,8 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/script/main.js"></script>
 </body>
 

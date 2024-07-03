@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: vw(56);
+    padding-top: vw(20);
 
     @include g.mq(md) {
         padding: mvw(17) mvw(130) mvw(60);
@@ -44,10 +44,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    row-gap: vw(24);
+    row-gap: vw(8);
     background-color: g.$c-bg-about-us;
     border-radius: vw(32);
-    padding: vw(24);
+    padding: vw(14) vw(24) vw(18);
 
     @include g.mq(md) {
         background-color: g.$c-bg;

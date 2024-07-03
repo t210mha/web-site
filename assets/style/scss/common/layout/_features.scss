@@ -8,7 +8,7 @@
 
 .features {
     background-color: g.$c-bg-features;
-    padding: vw(56) vw(16);
+    padding: vw(49) vw(16) vw(56);
 
     @include g.mq(md) {
         padding: mvw(64) mvw(33);
@@ -39,7 +39,6 @@
     flex-direction: column;
     row-gap: 0;
     width: vw(358);
-    height: vw(289);
     border-radius: vw(24);
     box-shadow: vw(2) vw(2) vw(1) vw(1) g.$c-shadow;
 
@@ -64,12 +63,12 @@
 
 .features__reason {
     width: vw(358);
-    height: vw(88);
-    padding: vw(20) vw(16);
+    padding: vw(12) vw(16) vw(13);
     border-radius: 0 0 vw(24) vw(24);
     @include baseFont($bold);
     font-size: vw(18);
     background-color: g.$c-bg;
+    line-height: 1.75;
 
     @include g.mq(md) {
         width: mvw(369);

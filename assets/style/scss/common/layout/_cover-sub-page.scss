@@ -73,8 +73,8 @@
 
     @include g.mq(md) {
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: mvw(-1);
+        left: mvw(-1);
         height: mvw(113);
         background-color: g.$c-bg;
         border-radius: 0 mvw(40) 0 0;

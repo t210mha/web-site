@@ -8,7 +8,7 @@
 
 .products-service {
     background-color: g.$c-bg;
-    padding: vw(56) vw(16);
+    padding: vw(51) vw(16) vw(56);
 
     @include g.mq(md) {
         padding: mvw(64) mvw(70);

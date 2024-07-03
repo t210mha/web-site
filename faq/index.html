@@ -31,24 +31,27 @@
 <body>
     <!-- ヘッダー ここから-->
     <header class="header">
-        <!-- ロゴ -->
-        <h1 class="header__logo"><a class="header__logo-link" href="/../"><img class="header__logo-img"
-                    src="/../assets/image/header/logo_01.svg" alt="Kirameki Farm"></a></h1>
+        <div class="header__inner">
+            <!-- ロゴ -->
+            <h1 class="header__logo"><a class="header__logo-link" href="/../"><img class="header__logo-img"
+                        src="/../assets/image/header/logo_01.svg" alt="Kirameki Farm"></a></h1>
 
-        <!-- ハンバーガーボタン -->
-        <button type="button" class="header__hamburger-button">
-            <img class="header__hamburger-button-bars" src="/../assets/image/header/hamburger_btn_bar_01.svg" alt="">
-        </button>
+            <!-- ハンバーガーボタン -->
+            <button type="button" class="header__hamburger-button">
+                <img class="header__hamburger-button-bars" src="/../assets/image/header/hamburger_btn_bar_01.svg"
+                    alt="">
+            </button>
 
-        <!-- ナビゲーション、ヘッダーメニュー -->
-        <nav class="header__nav">
-            <div class="header__nav-list">
-                <div><a class="header__nav-link header__nav-link--disable" href="/../">トップ</a>
+            <!-- ナビゲーション、ヘッダーメニュー -->
+            <nav class="header__nav">
+                <div class="header__nav-list">
+                    <div><a class="header__nav-link header__nav-link--disable" href="/../">トップ</a>
+                    </div>
+                    <div><a class="header__nav-link" href="/../price/">価格・スペック</a></div>
+                    <div><a class="header__nav-link header__nav-link--current" href="#">よくあるご質問</a></div>
                 </div>
-                <div><a class="header__nav-link" href="/../price/">価格・スペック</a></div>
-                <div><a class="header__nav-link header__nav-link--current" href="#">よくあるご質問</a></div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <!-- ヘッダー ここまで-->
 
@@ -82,9 +85,7 @@
                             </div>
                             <p class="question__text">農業用ドローンの主な用途は何ですか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__answer-text">
@@ -101,9 +102,7 @@
                             </div>
                             <p class="question__text">農業用ドローンの導入による主な利点は何ですか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -120,9 +119,7 @@
                             </div>
                             <p class="question__text">農業用ドローンの種類は？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -139,9 +136,7 @@
                             </div>
                             <p class="question__text">農業用ドローンの価格はどのくらいですか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -157,9 +152,7 @@
                             </div>
                             <p class="question__text">特別な免許や資格は必要ですか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <div class="question__button"></div>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -167,7 +160,6 @@
                     </dd>
                 </dl>
                 <dl class="faq__item">
-
                     <dt class="faq__item-question question">
                         <div class="question__mark">Q.</div>
                         <div class="question__content">
@@ -176,9 +168,7 @@
                             </div>
                             <p class="question__text">農業用ドローンの法規制は何ですか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -186,7 +176,6 @@
                     </dd>
                 </dl>
                 <dl class="faq__item">
-
                     <dt class="faq__item-question question">
                         <div class="question__mark">Q.</div>
                         <div class="question__content">
@@ -195,9 +184,7 @@
                             </div>
                             <p class="question__text">農業用ドローンのバッテリー寿命は？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -205,7 +192,6 @@
                     </dd>
                 </dl>
                 <dl class="faq__item">
-
                     <dt class="faq__item-question question">
                         <div class="question__mark">Q.</div>
                         <div class="question__content">
@@ -215,9 +201,7 @@
                             </div>
                             <p class="question__text">散布する薬剤や肥料の量はどのように制御されますか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -225,7 +209,6 @@
                     </dd>
                 </dl>
                 <dl class="faq__item">
-
                     <dt class="faq__item-question question">
                         <div class="question__mark">Q.</div>
                         <div class="question__content">
@@ -234,9 +217,7 @@
                             </div>
                             <p class="question__text">データ収集や解析にはどのようなソフトウェアが使用されますか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -244,7 +225,6 @@
                     </dd>
                 </dl>
                 <dl class="faq__item">
-
                     <dt class="faq__item-question question">
                         <div class="question__mark">Q.</div>
                         <div class="question__content">
@@ -254,9 +234,7 @@
                             </div>
                             <p class="question__text">農業用ドローンはどのような気象条件で飛行できますか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -273,9 +251,7 @@
                             </div>
                             <p class="question__text">農業用ドローンのメンテナンスには何が必要ですか？</p>
                         </div>
-                        <div class="question__button">
-                            <img class="question__button-image" src="../assets/image/faq/faq/icon_plus_01.png" alt="">
-                        </div>
+                        <button class="question__button"></button>
                     </dt>
                     <dd class="faq__item-answer">
                         <p class="faq__item-answer-text">
@@ -299,6 +275,8 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/script/main.js"></script>
 </body>
 

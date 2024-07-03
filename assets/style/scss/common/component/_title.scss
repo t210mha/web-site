@@ -11,8 +11,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    row-gap: vw(2);
-    padding-bottom: vw(24);
+    padding-bottom: vw(19);
 
     @include g.mq(md) {
         row-gap: mvw(6);
@@ -24,6 +23,7 @@
     @include baseFont($bold);
     font-size: vw(20);
     color: g.$c-txt;
+    line-height: 1.5;
 
     @include g.mq(md) {
         font-size: mvw(28);
@@ -33,6 +33,7 @@
         @include alphabetFont;
         font-size: vw(16);
         color: g.$c-txt-en;
+        line-height: 1.5;
 
         @include g.mq(md) {
             font-size: mvw(20);

@@ -11,19 +11,26 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: g.$z-index-header;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: g.$c-bg;
-    padding: vw(20) vw(16);
 
     @include g.mq(md) {
         padding: mvw(42) mvw(32);
     }
+}
 
-    @include g.mq(lg) {
-        padding: mvw(42) calc((100% - px2Rem($pc_content_width) + px2Rem(32))/2);
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: vw(356);
+    margin: auto;
+
+    @include g.mq(md) {
+        width: mvw(1168);
     }
 }
 
@@ -48,6 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: vw(2);
     width: vw(24);
     height: vw(18);
     cursor: pointer;
