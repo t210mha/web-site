@@ -11,7 +11,7 @@
     padding: vw(49) vw(16) vw(56);
 
     @include g.mq(md) {
-        padding: mvw(64) mvw(33);
+        padding: mvw(57) mvw(33) mvw(64);
     }
 }
 
@@ -30,6 +30,7 @@
         flex-direction: row;
         row-gap: 0;
         column-gap: mvw(30);
+        padding-top: mvw(2);
     }
 }
 
@@ -45,7 +46,7 @@
     @include g.mq(md) {
         width: mvw(369);
         height: mvw(319);
-        box-shadow: mvw(2) mvw(2) mvw(1) mvw(1) g.$c-shadow;
+        box-shadow: mvw(5) mvw(5) mvw(5) mvw(1) g.$c-shadow;
     }
 }
 
@@ -73,7 +74,7 @@
     @include g.mq(md) {
         width: mvw(369);
         height: mvw(93);
-        padding: mvw(20);
+        padding: mvw(12) mvw(20) mvw(20);
         border-radius: 0 0 mvw(24) mvw(24);
         font-size: mvw(19);
     }

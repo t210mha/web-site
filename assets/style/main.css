@@ -479,7 +479,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .features {
-    padding: 64px 33px;
+    padding: 57px 33px 64px;
   }
 }
 
@@ -499,6 +499,7 @@ img {
     flex-direction: row;
     row-gap: 0;
     column-gap: 30px;
+    padding-top: 2px;
   }
 }
 
@@ -515,7 +516,7 @@ img {
   .features__item {
     width: 369px;
     height: 319px;
-    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -547,7 +548,7 @@ img {
   .features__reason {
     width: 369px;
     height: 93px;
-    padding: 20px;
+    padding: 12px 20px 20px;
     border-radius: 0 0 24px 24px;
     font-size: 19px;
   }
@@ -562,7 +563,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .products-service {
-    padding: 64px 70px;
+    padding: 60px 70px 64px;
   }
 }
 
@@ -581,8 +582,11 @@ img {
   .products-service__list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 40px;
-    column-gap: 50px;
+    padding-top: 4px;
+    width: 1100px;
+    margin: 0 auto;
   }
 }
 
@@ -601,7 +605,7 @@ img {
 @media screen and (min-width: 768px) {
   .products-service__item, .products-service__item--large {
     column-gap: 20px;
-    width: 333px;
+    width: calc((100% - 100px) / 3);
     height: 150px;
     border-radius: 24px;
     padding: 20px 24px;
@@ -613,8 +617,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .products-service__item--large {
-    column-gap: 31px;
-    width: 525px;
+    column-gap: 28px;
+    width: calc((100% - 50px) / 2);
     height: 180px;
     border-radius: 24px;
     padding: 24px 32px;
@@ -623,12 +627,15 @@ img {
 
 .products-service__image, .products-service__image--large {
   width: 100px;
+  max-width: 100px;
   height: 100px;
   border-radius: 50px;
+  margin-top: -1px;
 }
 @media screen and (min-width: 768px) {
   .products-service__image, .products-service__image--large {
     width: 110px;
+    max-width: 110px;
     height: 110px;
     border-radius: 55.5px;
   }
@@ -636,6 +643,7 @@ img {
 @media screen and (min-width: 768px) {
   .products-service__image--large {
     width: 133px;
+    max-width: 133px;
     height: 133px;
     border-radius: 66.5px;
   }
