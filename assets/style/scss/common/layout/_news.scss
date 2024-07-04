@@ -8,7 +8,7 @@
 
 .news {
     background-color: g.$c-bg;
-    padding: vw(48) vw(16) vw(37);
+    padding: vw(48) vw(16) vw(36.5);
 
     @include g.mq(md) {
         padding: mvw(56) mvw(160) mvw(36.5);

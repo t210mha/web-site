@@ -24,10 +24,13 @@
 .footer__list {
     display: flex;
     align-items: center;
-    column-gap: vw(18);
+    justify-content: flex-start;
+    width: vw(216);
+    margin: vw(-4) auto 0;
 
     @include g.mq(md) {
-        column-gap: mvw(20);
+        width: mvw(278);
+        margin: mvw(-3) auto 0;
     }
 }
 
@@ -38,6 +41,17 @@
 
     @include g.mq(md) {
         font-size: mvw(15);
+        margin-left: mvw(18);
+    }
+
+    &--small {
+        @extend .footer__link;
+        margin-left: vw(15);
+
+        @include g.mq(md) {
+            font-size: mvw(14);
+            margin-left: mvw(19);
+        }
     }
 
     &:hover {
@@ -50,9 +64,11 @@
     height: vw(20);
     background-color: g.$c-link-footer;
     display: inline-block;
+    margin-left: vw(18);
 
     @include g.mq(md) {
         width: mvw(1);
-        height: mvw(24);
+        height: mvw(22);
+        margin-left: mvw(21);
     }
 }
