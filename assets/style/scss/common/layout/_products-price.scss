@@ -8,15 +8,16 @@
 
 .products-price {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    row-gap: vw(24);
-    padding: vw(40) vw(16);
+    row-gap: vw(8.5);
+    padding: vw(48.5) vw(16) 0;
 
     @include g.mq(md) {
-        row-gap: mvw(32);
-        padding: mvw(64) mvw(36);
+        align-items: center;
+        row-gap: mvw(16);
+        padding: mvw(13.5) mvw(36) 0;
     }
 }
 
