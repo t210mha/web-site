@@ -25,17 +25,20 @@
     justify-content: center;
     width: vw(358);
     height: vw(360);
+    margin: 0 auto;
     padding: vw(140) 0;
 
     @include g.mq(md) {
+        width: mvw(358);
         height: mvw(450);
-        padding: mvw(185) mvw(262);
+        margin: 0 auto;
+        padding: mvw(185) 0;
     }
 }
 
 .contact__btn {
-    width: vw(358);
-    padding: vw(28) 0;
+    width: 100%;
+    padding: vw(20) 0;
     @include baseFont($bold);
     font-size: vw(20);
     border: vw(2) solid g.$c-btn-contact-border;
@@ -44,8 +47,8 @@
     text-align: center;
 
     @include g.mq(md) {
-        width: mvw(358);
-        padding: mvw(28) 0;
+        width: 100%;
+        padding: mvw(20) 0;
         font-size: mvw(20);
         border-width: mvw(2);
         border-radius: mvw(40);
