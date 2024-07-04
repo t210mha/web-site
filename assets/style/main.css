@@ -404,8 +404,8 @@ img {
   justify-content: center;
   background-image: url("/assets/image/top/about/about_us_sp_01.png");
   background-size: cover;
-  background-position: center;
-  width: 100vw;
+  background-position: center center;
+  width: 100%;
   padding: 8.2051282051vw 4.1025641026vw;
 }
 @media screen and (min-width: 768px) {
@@ -416,6 +416,7 @@ img {
     background-image: none;
     column-gap: min(10.4838709677vw, 8.125rem);
     width: min(78.2258064516vw, 60.625rem);
+    max-width: min(78.2258064516vw, 60.625rem);
     margin: 0 auto;
     padding: min(0.2419354839vw, 0.1875rem) 0 min(0.8064516129vw, 0.625rem) 0;
   }
@@ -429,6 +430,7 @@ img {
   row-gap: 2.0512820513vw;
   background-color: #deddda;
   border-radius: 8.2051282051vw;
+  width: 91.7948717949vw;
   padding: 3.5897435897vw 6.1538461538vw 4.6153846154vw;
 }
 @media screen and (min-width: 768px) {
@@ -1102,7 +1104,7 @@ img {
 
 .breadcrumb__list {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: flex-end;
   vertical-align: bottom;
   margin: 0.7692307692vw -0.5128205128vw 0 0;
@@ -1793,7 +1795,6 @@ img {
 @media screen and (min-width: 768px) {
   .faq__item-answer-text {
     font-size: min(1.2903225806vw, 1rem);
-    line-height: 1.75;
   }
 }
 

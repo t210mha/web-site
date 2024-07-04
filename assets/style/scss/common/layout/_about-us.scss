@@ -28,8 +28,8 @@
     justify-content: center;
     background-image: url('/assets/image/top/about/about_us_sp_01.png');
     background-size: cover;
-    background-position: center;
-    width: vw(390);
+    background-position: center center;
+    width: 100%;
     padding: vw(32) vw(16);
 
     @include g.mq(md) {
@@ -39,6 +39,7 @@
         background-image: none;
         column-gap: mvw(130);
         width: mvw(970);
+        max-width: mvw(970);
         margin: 0 auto;
         padding: mvw(3) 0 mvw(10) 0;
     }
@@ -52,6 +53,7 @@
     row-gap: vw(8);
     background-color: g.$c-bg-about-us;
     border-radius: vw(32);
+    width: vw(358);
     padding: vw(14) vw(24) vw(18);
 
     @include g.mq(md) {
