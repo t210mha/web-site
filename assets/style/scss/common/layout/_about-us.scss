@@ -30,7 +30,8 @@
     background-size: cover;
     background-position: center center;
     width: 100%;
-    padding: vw(32) vw(16);
+    margin: 0 auto;
+    padding: vw(32) 0;
 
     @include g.mq(md) {
         align-items: flex-start;
