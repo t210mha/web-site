@@ -14,7 +14,7 @@
     padding-top: vw(28);
 
     @include g.mq(md) {
-        padding: mvw(20) mvw(130) mvw(54);
+        padding: mvw(20) 0 mvw(54);
     }
 }
 
@@ -29,14 +29,18 @@
     background-image: url('/assets/image/top/about/about_us_sp_01.png');
     background-size: cover;
     background-position: center;
+    width: vw(390);
     padding: vw(32) vw(16);
 
     @include g.mq(md) {
         align-items: flex-start;
+        justify-content: space-between;
         flex-direction: row;
         background-image: none;
         column-gap: mvw(130);
-        padding: mvw(3) mvw(100) mvw(10) mvw(66);
+        width: mvw(970);
+        margin: 0 auto;
+        padding: mvw(3) 0 mvw(10) 0;
     }
 }
 
@@ -54,7 +58,8 @@
         background-color: g.$c-bg;
         row-gap: mvw(25);
         border-radius: 0;
-        padding: mvw(100) mvw(20);
+        padding: mvw(100) 0;
+        width: mvw(406);
     }
 }
 
@@ -85,6 +90,7 @@
         display: block;
         width: mvw(390);
         height: mvw(570);
-        border-radius: mvw(40);
+        border-radius: mvw(33);
+        margin-right: mvw(15);
     }
 }

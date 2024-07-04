@@ -8,7 +8,7 @@ $pc_content_width: 1240;
 $pc_full_width: 1500;
 
 // 本番用か否か？本番用の場合は1にする。0の場合はpxで出力される。(パーフェクトピクセル用)
-$production: 0;
+$production: 1;
 
 // SP用: vwへの変換
 @function vw($px) {
