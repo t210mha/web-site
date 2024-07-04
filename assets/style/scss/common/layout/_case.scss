@@ -8,10 +8,10 @@
 
 .case {
     background-color: g.$c-bg-case;
-    padding: vw(56) vw(16);
+    padding: vw(49) vw(16);
 
     @include g.mq(md) {
-        padding: mvw(64) mvw(33);
+        padding: mvw(56) mvw(33) mvw(59);
     }
 }
 
@@ -24,25 +24,26 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    row-gap: vw(32);
+    row-gap: vw(26);
 
     @include g.mq(md) {
         flex-direction: row;
         row-gap: 0;
         column-gap: mvw(30);
+        padding-top: mvw(3);
     }
 }
 
 .case__item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: vw(358);
-    row-gap: vw(16);
+    row-gap: vw(8);
 
     @include g.mq(md) {
         width: mvw(369);
-        row-gap: mvw(17);
+        row-gap: mvw(9);
     }
 
     &:hover {
@@ -62,14 +63,16 @@
     }
 }
 
-.case__title {
+.case__item__title {
     @include baseFont($bold);
     font-size: vw(18);
     color: g.$c-link-case-section;
     text-align: left;
+    padding-left: vw(2);
 
     @include g.mq(md) {
         font-size: mvw(19);
+        padding-left: 0;
     }
 
 }
