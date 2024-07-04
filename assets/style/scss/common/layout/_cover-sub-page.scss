@@ -84,6 +84,10 @@
         background-color: g.$c-bg;
         border-radius: 0 mvw(40) 0 0;
         padding: mvw(23) mvw(34.5) mvw(40) mvw(40);
+
+        &--faq {
+            padding-right: mvw(32);
+        }
     }
 }
 

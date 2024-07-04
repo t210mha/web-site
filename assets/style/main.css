@@ -1075,6 +1075,9 @@ img {
     border-radius: 0 40px 0 0;
     padding: 23px 34.5px 40px 40px;
   }
+  .cover-sub-page__heading--faq {
+    padding-right: 32px;
+  }
 }
 
 .cover-sub-page__title {
