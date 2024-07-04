@@ -26,6 +26,11 @@
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    row-gap: vw(18);
+
+    @include g.mq(md) {
+        row-gap: 0;
+    }
 }
 
 .cover-sub-page__image {
@@ -75,10 +80,10 @@
         position: absolute;
         bottom: mvw(-1);
         left: mvw(-1);
-        height: mvw(113);
+        height: mvw(114);
         background-color: g.$c-bg;
         border-radius: 0 mvw(40) 0 0;
-        padding: mvw(39) mvw(36) mvw(40) mvw(40);
+        padding: mvw(23) mvw(34.5) mvw(40) mvw(40);
     }
 }
 
@@ -89,6 +94,7 @@
 
     @include g.mq(md) {
         font-size: mvw(36);
+        letter-spacing: 0.015em;
     }
 }
 
@@ -96,7 +102,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0;
+    vertical-align: bottom;
+    margin: vw(3) vw(-2) 0 0;
+
+    @include g.mq(md) {
+        margin: mvw(6) mvw(18) 0 0;
+    }
 }
 
 .breadcrumb__item:not(:last-child)::after {
