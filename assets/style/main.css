@@ -110,14 +110,14 @@ img {
   align-items: flex-start;
   flex-direction: column;
   width: 358px;
-  padding-bottom: 12px;
+  padding-bottom: 4px;
   border-bottom: solid 3px #ddd;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .heading {
     width: 800px;
-    padding: 100px 0 32px;
+    padding: 38px 0 14px;
     border-bottom-width: 5px;
   }
 }
@@ -1003,12 +1003,12 @@ img {
   justify-content: center;
   flex-direction: column;
   margin-top: 63px;
-  padding: 20px 16px 40px;
+  padding: 20px 16px 0;
 }
 @media screen and (min-width: 768px) {
   .cover-sub-page {
     margin-top: 114px;
-    padding: 40px calc((100% - 1240px) / 2);
+    padding: 40px calc((100% - 1240px) / 2) 0;
   }
 }
 
@@ -1140,12 +1140,12 @@ img {
   justify-content: center;
   flex-direction: column;
   row-gap: 24px;
-  padding: 40px 16px;
+  padding: 16px 16px;
 }
 @media screen and (min-width: 768px) {
   .gallery {
     row-gap: 32px;
-    padding: 64px 36px;
+    padding: 0 36px;
   }
 }
 
@@ -1166,11 +1166,11 @@ img {
 
 .swiper-pagination {
   position: absolute;
-  bottom: 5px !important;
+  bottom: 3px !important;
 }
 @media screen and (min-width: 768px) {
   .swiper-pagination {
-    bottom: 16px !important;
+    bottom: 15px !important;
   }
 }
 
@@ -1179,13 +1179,13 @@ img {
   opacity: 0.8;
   width: 8px;
   height: 8px;
-  margin: 0 6px !important;
+  margin: 0 3px !important;
 }
 @media screen and (min-width: 768px) {
   .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
-    margin: 0 6px !important;
+    margin: 0 3px !important;
   }
 }
 

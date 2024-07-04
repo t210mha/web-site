@@ -11,13 +11,13 @@
     align-items: flex-start;
     flex-direction: column;
     width: vw(358);
-    padding-bottom: vw(12);
+    padding-bottom: vw(4);
     border-bottom: solid vw(3) g.$c-bar-price-spec-section-gray;
     position: relative;
 
     @include g.mq(md) {
         width: mvw(800);
-        padding: mvw(100) 0 mvw(32);
+        padding: mvw(38) 0 mvw(14);
         border-bottom-width: mvw(5);
     }
 }

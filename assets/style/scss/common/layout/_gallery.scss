@@ -12,11 +12,11 @@
     justify-content: center;
     flex-direction: column;
     row-gap: vw(24);
-    padding: vw(40) vw(16);
+    padding: vw(16) vw(16);
 
     @include g.mq(md) {
         row-gap: mvw(32);
-        padding: mvw(64) mvw(36);
+        padding: 0 mvw(36);
     }
 }
 
@@ -36,10 +36,10 @@
 
 .swiper-pagination {
     position: absolute;
-    bottom: vw(5) !important;
+    bottom: vw(3) !important;
 
     @include g.mq(md) {
-        bottom: mvw(16) !important;
+        bottom: mvw(15) !important;
     }
 }
 
@@ -48,12 +48,12 @@
     opacity: g.$opacity;
     width: vw(8);
     height: vw(8);
-    margin: 0 vw(6) !important;
+    margin: 0 vw(3) !important;
 
     @include g.mq(md) {
         width: mvw(8);
         height: mvw(8);
-        margin: 0 mvw(6) !important;
+        margin: 0 mvw(3) !important;
     }
 }
 

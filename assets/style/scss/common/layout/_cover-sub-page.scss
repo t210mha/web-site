@@ -12,11 +12,11 @@
     justify-content: center;
     flex-direction: column;
     margin-top: vw(63);
-    padding: vw(20) vw(16) vw(40);
+    padding: vw(20) vw(16) 0;
 
     @include g.mq(md) {
         margin-top: mvw(114);
-        padding: mvw(40) calc((100% - mvw($pc_content_width))/2);
+        padding: mvw(40) calc((100% - mvw($pc_content_width))/2) 0;
     }
 }
 
