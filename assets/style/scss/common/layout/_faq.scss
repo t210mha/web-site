@@ -27,7 +27,7 @@
 
     @include g.mq(md) {
         width: mvw(800);
-        row-gap: mvw(24);
+        row-gap: mvw(23);
     }
 }
 
@@ -76,6 +76,7 @@
 
     @include g.mq(md) {
         column-gap: mvw(14);
+        padding-top: mvw(5);
     }
 }
 
@@ -100,6 +101,7 @@
     @include g.mq(md) {
         row-gap: mvw(10);
         width: mvw(660);
+        padding-top: mvw(10);
     }
 }
 

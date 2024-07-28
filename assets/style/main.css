@@ -1720,7 +1720,7 @@ img {
 @media screen and (min-width: 768px) {
     .faq__list {
         width: min(64.5161290323vw, 50rem);
-        row-gap: min(1.935483871vw, 1.5rem);
+        row-gap: min(1.8548387097vw, 1.4375rem);
     }
 }
 
@@ -1782,6 +1782,7 @@ img {
 @media screen and (min-width: 768px) {
     .faq__item-question {
         column-gap: min(1.1290322581vw, 0.875rem);
+        padding-top: min(0.4032258065vw, 0.3125rem);
     }
 }
 
@@ -1812,6 +1813,7 @@ img {
     .question__content {
         row-gap: min(0.8064516129vw, 0.625rem);
         width: min(53.2258064516vw, 41.25rem);
+        padding-top: min(0.8064516129vw, 0.625rem);
     }
 }
 
