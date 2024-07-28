@@ -34,7 +34,7 @@
 .products-price__amount {
     @include alphabetFont($bold);
     font-size: vw(32);
-    color: g.$c-txt;
+    color: g.$c-txt-price;
 
     @include g.mq(md) {
         font-size: mvw(32);
