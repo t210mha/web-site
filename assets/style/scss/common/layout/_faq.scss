@@ -44,7 +44,7 @@
         column-gap: mvw(24);
         border-width: mvw(1);
         border-radius: mvw(16);
-        padding: mvw(20) mvw(32) mvw(18) mvw(31);
+        padding: mvw(18) mvw(32) mvw(15) mvw(31);
     }
 
     &--large {
@@ -52,7 +52,7 @@
         padding-top: vw(24);
 
         @include g.mq(md) {
-            padding-top: mvw(18);
+            padding-top: mvw(19);
         }
     }
 }
@@ -88,6 +88,7 @@
 
     @include g.mq(md) {
         font-size: mvw(24);
+        padding-top: mvw(2);
     }
 }
 
@@ -101,7 +102,7 @@
     @include g.mq(md) {
         row-gap: mvw(10);
         width: mvw(660);
-        padding-top: mvw(10);
+        padding-top: 0;
     }
 }
 
@@ -110,7 +111,6 @@
     align-items: center;
     justify-content: center;
     column-gap: vw(8);
-    margin-top: vw(-4);
 
     @include g.mq(md) {
         column-gap: mvw(8);

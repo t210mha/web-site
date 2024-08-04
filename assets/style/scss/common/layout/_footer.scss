@@ -12,12 +12,12 @@
     justify-content: center;
     width: 100%;
     height: vw(68);
-    padding: vw(24) vw(28);
+    padding: vw(20) vw(28);
     background-color: g.$c-bg-footer;
 
     @include g.mq(md) {
         height: mvw(96);
-        padding: mvw(36) 0;
+        padding: mvw(33) 0;
     }
 }
 
@@ -26,11 +26,10 @@
     align-items: center;
     justify-content: flex-start;
     width: vw(216);
-    margin: vw(-4) auto 0;
+    margin: 0 auto;
 
     @include g.mq(md) {
         width: mvw(278);
-        margin: mvw(-3) auto 0;
     }
 }
 

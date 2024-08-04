@@ -655,7 +655,7 @@ img {
     background-color: #168352;
     border-radius: 6.1538461538vw;
     color: #fff;
-    padding: 5.1282051282vw 6.1538461538vw;
+    padding: 4.8717948718vw 6.1538461538vw 5.3846153846vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -666,7 +666,7 @@ img {
         width: calc((100% - min(8.064516129vw, 6.25rem)) / 3);
         height: min(12.0967741935vw, 9.375rem);
         border-radius: min(1.935483871vw, 1.5rem);
-        padding: min(1.6129032258vw, 1.25rem) min(1.935483871vw, 1.5rem);
+        padding: min(1.5322580645vw, 1.1875rem) min(1.935483871vw, 1.5rem) min(1.6935483871vw, 1.3125rem);
     }
 }
 
@@ -682,7 +682,7 @@ img {
         width: calc((100% - min(4.0322580645vw, 3.125rem)) / 2);
         height: min(14.5161290323vw, 11.25rem);
         border-radius: min(1.935483871vw, 1.5rem);
-        padding: min(1.935483871vw, 1.5rem) min(2.5806451613vw, 2rem);
+        padding: min(1.8548387097vw, 1.4375rem) min(2.5806451613vw, 2rem) min(2.0161290323vw, 1.5625rem);
     }
 }
 
@@ -692,7 +692,6 @@ img {
     max-width: 25.641025641vw;
     height: 25.641025641vw;
     border-radius: 12.8205128205vw;
-    margin-top: -0.2564102564vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -722,6 +721,7 @@ img {
     font-style: normal;
     font-size: 4.6153846154vw;
     text-align: left;
+    margin-top: 0.2564102564vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -729,6 +729,7 @@ img {
     .products-service__name,
     .products-service__name--large {
         font-size: min(1.6129032258vw, 1.25rem);
+        margin-top: min(0.0806451613vw, 0.0625rem);
     }
 }
 
@@ -896,13 +897,13 @@ img {
     font-style: normal;
     font-size: 3.8461538462vw;
     color: #222222;
-    margin-top: -1.0256410256vw;
+    margin-bottom: 1.0256410256vw;
 }
 
 @media screen and (min-width: 768px) {
     .news__date {
         font-size: min(1.1290322581vw, 0.875rem);
-        margin-top: max(-0.3225806452vw, -0.25rem);
+        margin-bottom: min(0.3225806452vw, 0.25rem);
     }
 }
 
@@ -1019,14 +1020,14 @@ img {
     justify-content: center;
     width: 100%;
     height: 17.4358974359vw;
-    padding: 6.1538461538vw 7.1794871795vw;
+    padding: 5.1282051282vw 7.1794871795vw;
     background-color: #168352;
 }
 
 @media screen and (min-width: 768px) {
     .footer {
         height: min(7.7419354839vw, 6rem);
-        padding: min(2.9032258065vw, 2.25rem) 0;
+        padding: min(2.6612903226vw, 2.0625rem) 0;
     }
 }
 
@@ -1035,13 +1036,12 @@ img {
     align-items: center;
     justify-content: flex-start;
     width: 55.3846153846vw;
-    margin: -1.0256410256vw auto 0;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     .footer__list {
         width: min(22.4193548387vw, 17.375rem);
-        margin: max(-0.2419354839vw, -0.1875rem) auto 0;
     }
 }
 
@@ -1743,7 +1743,7 @@ img {
         column-gap: min(1.935483871vw, 1.5rem);
         border-width: min(0.0806451613vw, 0.0625rem);
         border-radius: min(1.2903225806vw, 1rem);
-        padding: min(1.6129032258vw, 1.25rem) min(2.5806451613vw, 2rem) min(1.4516129032vw, 1.125rem) min(2.5vw, 1.9375rem);
+        padding: min(1.4516129032vw, 1.125rem) min(2.5806451613vw, 2rem) min(1.2096774194vw, 0.9375rem) min(2.5vw, 1.9375rem);
     }
 }
 
@@ -1753,7 +1753,7 @@ img {
 
 @media screen and (min-width: 768px) {
     .faq__item--large {
-        padding-top: min(1.4516129032vw, 1.125rem);
+        padding-top: min(1.5322580645vw, 1.1875rem);
     }
 }
 
@@ -1799,6 +1799,7 @@ img {
 @media screen and (min-width: 768px) {
     .question__mark {
         font-size: min(1.935483871vw, 1.5rem);
+        padding-top: min(0.1612903226vw, 0.125rem);
     }
 }
 
@@ -1814,7 +1815,7 @@ img {
     .question__content {
         row-gap: min(0.8064516129vw, 0.625rem);
         width: min(53.2258064516vw, 41.25rem);
-        padding-top: min(0.8064516129vw, 0.625rem);
+        padding-top: 0;
     }
 }
 
@@ -1823,7 +1824,6 @@ img {
     align-items: center;
     justify-content: center;
     column-gap: 2.0512820513vw;
-    margin-top: -1.0256410256vw;
 }
 
 @media screen and (min-width: 768px) {

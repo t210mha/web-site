@@ -66,11 +66,11 @@
     @include baseFont;
     font-size: vw(15);
     color: g.$c-txt-news-date;
-    margin-top: vw(-4);
+    margin-bottom: vw(4);
 
     @include g.mq(md) {
         font-size: mvw(14);
-        margin-top: mvw(-4);
+        margin-bottom: mvw(4);
     }
 }
 

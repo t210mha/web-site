@@ -47,14 +47,14 @@
     background-color: g.$c-bg-products-service;
     border-radius: vw(24);
     color: g.$c-link-products-service;
-    padding: vw(20) vw(24);
+    padding: vw(19) vw(24) vw(21);
 
     @include g.mq(md) {
         column-gap: mvw(20);
         width: calc((100% - mvw(100)) / 3);
         height: mvw(150);
         border-radius: mvw(24);
-        padding: mvw(20) mvw(24);
+        padding: mvw(19) mvw(24) mvw(21);
     }
 
     &:hover {
@@ -70,7 +70,7 @@
             width: calc((100% - mvw(50)) / 2);
             height: mvw(180);
             border-radius: mvw(24);
-            padding: mvw(24) mvw(32);
+            padding: mvw(23) mvw(32) mvw(25);
         }
     }
 }
@@ -80,7 +80,6 @@
     max-width: vw(100);
     height: vw(100);
     border-radius: vw(50);
-    margin-top: vw(-1);
 
     @include g.mq(md) {
         width: mvw(110);
@@ -105,9 +104,11 @@
     @include baseFont($bold);
     font-size: vw(18);
     text-align: left;
+    margin-top: vw(1);
 
     @include g.mq(md) {
         font-size: mvw(20);
+        margin-top: mvw(1);
     }
 
     &--large {
