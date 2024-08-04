@@ -38,7 +38,8 @@ h2 {
     font-weight: normal;
 }
 
-ul {
+ul,
+ol {
     list-style: none;
     padding: 0;
     margin: 0;
