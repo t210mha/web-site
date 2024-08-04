@@ -1162,13 +1162,13 @@ img {
 
 @media screen and (min-width: 768px) {
     .cover-sub-page__content--faq {
-        background-image: url("/../assets/image/faq/cover/cover_pc_01.png");
+        background-image: url("/assets/image/faq/cover/cover_pc_01.png");
     }
 }
 
 @media screen and (min-width: 768px) {
     .cover-sub-page__content--products {
-        background-image: url("/../assets/image/products_service/cover/cover_pc_01.png");
+        background-image: url("/assets/image/products_service/cover/cover_pc_01.png");
     }
 }
 
@@ -1240,7 +1240,7 @@ img {
     content: "";
     width: 1.2820512821vw;
     height: 2.5641025641vw;
-    background-image: url("/../assets/image/common/arrow_01.png");
+    background-image: url("/assets/image/common/arrow_01.png");
     background-size: contain;
 }
 
