@@ -36,10 +36,10 @@
 
 .swiper-pagination {
     position: absolute;
-    bottom: vw(3) !important;
+    --swiper-pagination-bottom: #{vw(3)};
 
     @include g.mq(md) {
-        bottom: mvw(15) !important;
+        --swiper-pagination-bottom: #{mvw(15)};
     }
 }
 
@@ -48,12 +48,12 @@
     opacity: g.$opacity;
     width: vw(8);
     height: vw(8);
-    margin: 0 vw(3) !important;
+    --swiper-pagination-bullet-horizontal-gap: #{vw(3)};
 
     @include g.mq(md) {
         width: mvw(8);
         height: mvw(8);
-        margin: 0 mvw(3) !important;
+        --swiper-pagination-bullet-horizontal-gap: #{mvw(3)};
     }
 }
 
