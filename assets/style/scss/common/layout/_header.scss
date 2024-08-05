@@ -21,6 +21,14 @@
     @include g.mq(md) {
         padding: mvw(42) mvw(32);
     }
+
+    &--sub-page {
+        padding-top: vw(16);
+
+        @include g.mq(md) {
+            padding-top: mvw(42);
+        }
+    }
 }
 
 .header__inner {

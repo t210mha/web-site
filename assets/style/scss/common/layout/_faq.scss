@@ -27,7 +27,7 @@
 
     @include g.mq(md) {
         width: mvw(800);
-        row-gap: mvw(24.5);
+        row-gap: mvw(23.5);
     }
 }
 
@@ -38,36 +38,16 @@
     column-gap: vw(24);
     border: g.$c-border-faq vw(1) solid;
     border-radius: vw(16);
-    padding: vw(22) vw(23) vw(17);
 
     @include g.mq(md) {
         column-gap: mvw(24);
         border-width: mvw(1);
         border-radius: mvw(16);
-        padding: mvw(18) mvw(32) mvw(15) mvw(31);
-    }
-
-    &--middle {
-        @extend .faq__item;
-        padding-top: vw(23);
-
-        @include g.mq(md) {
-            padding-top: mvw(18);
-        }
-    }
-
-    &--large {
-        @extend .faq__item;
-        padding-top: vw(23);
-
-        @include g.mq(md) {
-            padding-top: mvw(19);
-        }
     }
 }
 
 .faq__item:has(.faq__item-question.open) {
-    margin-bottom: vw(3);
+    margin-bottom: vw(4);
 
     @include g.mq(md) {
         margin-bottom: 0;
@@ -81,10 +61,33 @@
     justify-content: space-between;
     column-gap: vw(16);
     cursor: pointer;
+    padding: vw(22) vw(23) vw(17);
 
     @include g.mq(md) {
         column-gap: mvw(14);
-        padding-top: mvw(5);
+        padding: mvw(24) mvw(32) mvw(15) mvw(31);
+    }
+
+    &--middle {
+        @extend .faq__item-question;
+        padding-top: vw(23);
+
+        @include g.mq(md) {
+            padding-top: mvw(24);
+        }
+    }
+
+    &--large {
+        @extend .faq__item-question;
+        padding-top: vw(23);
+
+        @include g.mq(md) {
+            padding-top: mvw(24);
+        }
+    }
+
+    &.open {
+        padding-bottom: 0;
     }
 }
 
@@ -208,51 +211,60 @@
 
 .faq__item-answer {
     display: none;
-    padding: vw(3) 0 0 vw(1);
+    padding: vw(2) vw(23) vw(17);
 
     @include g.mq(md) {
-        padding: mvw(18) 0 0 0;
+        padding: mvw(15) mvw(32) mvw(18) mvw(31);
     }
 
     &--middle {
         @extend .faq__item-answer;
-        padding-left: vw(3);
+        padding-left: vw(26);
 
         @include g.mq(md) {
-            padding-left: mvw(1);
+            padding-left: mvw(32);
         }
     }
 
     &--small {
         @extend .faq__item-answer;
         padding-top: 0;
-        padding-left: vw(3);
+        padding-left: vw(26);
+        padding-bottom: vw(15);
 
         @include g.mq(md) {
-            padding-top: mvw(17);
-            padding-left: mvw(1);
+            padding: mvw(15) mvw(32) mvw(18) mvw(31);
         }
     }
 
     &--bottom {
         @extend .faq__item-answer;
         padding-top: vw(1);
-        padding-left: vw(3);
+        padding-left: vw(26);
 
         @include g.mq(md) {
-            padding-top: mvw(20);
-            padding-left: mvw(1);
+            padding: mvw(15) mvw(32) mvw(18) mvw(31);
         }
     }
 
     &--large {
         @extend .faq__item-answer;
-        padding-top: vw(10);
-        padding-left: vw(3);
+        padding-left: vw(26);
+        padding-right: vw(17);
 
         @include g.mq(md) {
-            padding-top: mvw(17);
-            padding-left: 0;
+            padding: mvw(17) mvw(32) mvw(18) mvw(31);
+        }
+    }
+
+    &--huge {
+        @extend .faq__item-answer;
+        padding-top: vw(9);
+        padding-left: vw(26);
+        padding-right: vw(17);
+
+        @include g.mq(md) {
+            padding: mvw(17) mvw(32) mvw(18) mvw(31);
         }
     }
 }
