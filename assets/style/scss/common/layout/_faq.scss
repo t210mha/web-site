@@ -64,8 +64,8 @@
     padding: vw(22) vw(23) vw(17);
 
     @include g.mq(md) {
-        column-gap: mvw(14);
-        padding: mvw(24) mvw(32) mvw(15) mvw(31);
+        column-gap: mvw(15);
+        padding: mvw(23) mvw(32) mvw(16) mvw(31);
     }
 
     &--middle {
@@ -73,7 +73,7 @@
         padding-top: vw(23);
 
         @include g.mq(md) {
-            padding-top: mvw(24);
+            padding-top: mvw(23);
         }
     }
 
@@ -179,34 +179,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: vw(19);
-    height: vw(19);
+    width: vw(18);
+    height: vw(24);
 
     @include g.mq(md) {
-        width: mvw(19);
-        height: mvw(19);
+        width: mvw(18);
+        height: mvw(24);
     }
 
     &::after {
         content: '';
         display: block;
-        width: vw(19);
-        height: vw(19);
-        background-image: url('/assets/image/faq/faq/icon_plus_01.png');
+        width: vw(24);
+        height: vw(24);
+        background-image: url('/assets/image/faq/faq/icon_plus_01.svg');
         background-size: cover;
         background-position: center;
-        margin-top: vw(6);
 
         @include g.mq(md) {
-            width: mvw(19);
-            height: mvw(19);
-            margin-top: mvw(7);
+            width: mvw(24);
+            height: mvw(24);
         }
     }
 }
 
 .faq__item-question.open .question__button::after {
-    background-image: url('/assets/image/faq/faq/icon_minus_01.png');
+    background-image: url('/assets/image/faq/faq/icon_minus_01.svg');
+
+    @include g.mq(md) {
+        background-image: url('/assets/image/faq/faq/icon_minus_01.svg');
+        margin-top: mvw(4);
+    }
 }
 
 .faq__item-answer {
@@ -214,7 +217,7 @@
     padding: vw(2) vw(23) vw(17);
 
     @include g.mq(md) {
-        padding: mvw(15) mvw(32) mvw(18) mvw(31);
+        padding: mvw(15) mvw(32) mvw(19) mvw(31);
     }
 
     &--middle {
@@ -233,7 +236,7 @@
         padding-bottom: vw(15);
 
         @include g.mq(md) {
-            padding: mvw(15) mvw(32) mvw(18) mvw(31);
+            padding: mvw(15) mvw(32) mvw(20) mvw(31);
         }
     }
 
