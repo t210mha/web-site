@@ -85,10 +85,6 @@
             padding-top: mvw(24);
         }
     }
-
-    &.open {
-        padding-bottom: 0;
-    }
 }
 
 .question__mark {
@@ -214,39 +210,44 @@
 
 .faq__item-answer {
     display: none;
-    padding: vw(2) vw(23) vw(17);
+    margin-top: vw(-15);
+    padding: 0 vw(23) vw(17);
 
     @include g.mq(md) {
-        padding: mvw(15) mvw(32) mvw(19) mvw(31);
+        margin-top: mvw(-1);
+        padding: 0 mvw(32) mvw(19) mvw(31);
     }
 
     &--middle {
         @extend .faq__item-answer;
+        margin-top: vw(-16);
         padding-left: vw(26);
 
         @include g.mq(md) {
+            margin-top: mvw(-1);
             padding-left: mvw(32);
         }
     }
 
     &--small {
         @extend .faq__item-answer;
-        padding-top: 0;
+        margin-top: vw(-18);
         padding-left: vw(26);
-        padding-bottom: vw(15);
+        padding-bottom: vw(17);
 
         @include g.mq(md) {
-            padding: mvw(15) mvw(32) mvw(20) mvw(31);
+            margin-top: mvw(-1);
+            padding: 0 mvw(32) mvw(20) mvw(31);
         }
     }
 
     &--bottom {
         @extend .faq__item-answer;
-        padding-top: vw(1);
         padding-left: vw(26);
 
         @include g.mq(md) {
-            padding: mvw(15) mvw(32) mvw(18) mvw(31);
+            margin-top: mvw(-1);
+            padding: 0 mvw(32) mvw(19) mvw(31);
         }
     }
 
@@ -256,18 +257,19 @@
         padding-right: vw(17);
 
         @include g.mq(md) {
-            padding: mvw(17) mvw(32) mvw(18) mvw(31);
+            padding: mvw(1) mvw(32) mvw(18) mvw(31);
         }
     }
 
     &--huge {
         @extend .faq__item-answer;
-        padding-top: vw(9);
+        margin-top: vw(-7);
         padding-left: vw(26);
         padding-right: vw(17);
 
         @include g.mq(md) {
-            padding: mvw(17) mvw(32) mvw(18) mvw(31);
+            margin-top: 0;
+            padding: mvw(2) mvw(32) mvw(18) mvw(31);
         }
     }
 }

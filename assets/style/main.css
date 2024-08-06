@@ -1804,12 +1804,6 @@ img {
     }
 }
 
-.faq__item-question.open,
-.open.faq__item-question--middle,
-.open.faq__item-question--large {
-    padding-bottom: 0;
-}
-
 .question__mark {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -1968,7 +1962,8 @@ img {
 .faq__item-answer--small,
 .faq__item-answer--middle {
     display: none;
-    padding: 0.5128205128vw 5.8974358974vw 4.358974359vw;
+    margin-top: -3.8461538462vw;
+    padding: 0 5.8974358974vw 4.358974359vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -1979,40 +1974,44 @@ img {
     .faq__item-answer--bottom,
     .faq__item-answer--small,
     .faq__item-answer--middle {
-        padding: min(1.2096774194vw, 0.9375rem) min(2.5806451613vw, 2rem) min(1.5322580645vw, 1.1875rem) min(2.5vw, 1.9375rem);
+        margin-top: max(-0.0806451613vw, -0.0625rem);
+        padding: 0 min(2.5806451613vw, 2rem) min(1.5322580645vw, 1.1875rem) min(2.5vw, 1.9375rem);
     }
 }
 
 .faq__item-answer--middle {
+    margin-top: -4.1025641026vw;
     padding-left: 6.6666666667vw;
 }
 
 @media screen and (min-width: 768px) {
     .faq__item-answer--middle {
+        margin-top: max(-0.0806451613vw, -0.0625rem);
         padding-left: min(2.5806451613vw, 2rem);
     }
 }
 
 .faq__item-answer--small {
-    padding-top: 0;
+    margin-top: -4.6153846154vw;
     padding-left: 6.6666666667vw;
-    padding-bottom: 3.8461538462vw;
+    padding-bottom: 4.358974359vw;
 }
 
 @media screen and (min-width: 768px) {
     .faq__item-answer--small {
-        padding: min(1.2096774194vw, 0.9375rem) min(2.5806451613vw, 2rem) min(1.6129032258vw, 1.25rem) min(2.5vw, 1.9375rem);
+        margin-top: max(-0.0806451613vw, -0.0625rem);
+        padding: 0 min(2.5806451613vw, 2rem) min(1.6129032258vw, 1.25rem) min(2.5vw, 1.9375rem);
     }
 }
 
 .faq__item-answer--bottom {
-    padding-top: 0.2564102564vw;
     padding-left: 6.6666666667vw;
 }
 
 @media screen and (min-width: 768px) {
     .faq__item-answer--bottom {
-        padding: min(1.2096774194vw, 0.9375rem) min(2.5806451613vw, 2rem) min(1.4516129032vw, 1.125rem) min(2.5vw, 1.9375rem);
+        margin-top: max(-0.0806451613vw, -0.0625rem);
+        padding: 0 min(2.5806451613vw, 2rem) min(1.5322580645vw, 1.1875rem) min(2.5vw, 1.9375rem);
     }
 }
 
@@ -2023,19 +2022,20 @@ img {
 
 @media screen and (min-width: 768px) {
     .faq__item-answer--large {
-        padding: min(1.3709677419vw, 1.0625rem) min(2.5806451613vw, 2rem) min(1.4516129032vw, 1.125rem) min(2.5vw, 1.9375rem);
+        padding: min(0.0806451613vw, 0.0625rem) min(2.5806451613vw, 2rem) min(1.4516129032vw, 1.125rem) min(2.5vw, 1.9375rem);
     }
 }
 
 .faq__item-answer--huge {
-    padding-top: 2.3076923077vw;
+    margin-top: -1.7948717949vw;
     padding-left: 6.6666666667vw;
     padding-right: 4.358974359vw;
 }
 
 @media screen and (min-width: 768px) {
     .faq__item-answer--huge {
-        padding: min(1.3709677419vw, 1.0625rem) min(2.5806451613vw, 2rem) min(1.4516129032vw, 1.125rem) min(2.5vw, 1.9375rem);
+        margin-top: 0;
+        padding: min(0.1612903226vw, 0.125rem) min(2.5806451613vw, 2rem) min(1.4516129032vw, 1.125rem) min(2.5vw, 1.9375rem);
     }
 }
 
